@@ -45,3 +45,17 @@ let obj: StringRegexDictionary = {
     jsFile: /\.js$/,
 }
 
+interface Person2 {
+    name: string;
+    age: number;
+}
+
+interface Developer extends Person2 {
+    language: string;
+}
+
+var bach: Developer ={
+    language: 'ts',
+    name: 'kim',
+    age: 33
+}
